@@ -1,10 +1,8 @@
-import java.util.Arrays;
-
 public class Start {
 
     public static void main(String[] args) {
-        SelectionSort selectionSort = new SelectionSort();
-        System.out.println(Arrays.toString(selectionSort.selectionSort(new int[0])));
+        Recursion recursion = new Recursion();
+        System.out.println(recursion.fact(5));
     }
 
 }
