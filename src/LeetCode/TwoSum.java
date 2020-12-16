@@ -8,7 +8,7 @@ public class TwoSum {
             System.out.println(j);
     }
 
-    public static int[] twoSum(int[] nums, int target) {
+    private static int[] twoSum(int[] nums, int target) {
 
         int[] result = new int[2];
 
