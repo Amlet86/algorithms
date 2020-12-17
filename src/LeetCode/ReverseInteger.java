@@ -3,7 +3,7 @@ package LeetCode;
 public class ReverseInteger {
 
     public static void main(String[] args) {
-        int result = reverse2(120);
+        int result = reverse(120);
         System.out.println(result);
     }
 
@@ -27,18 +27,6 @@ public class ReverseInteger {
         long reverseNum = Long.parseLong(String.valueOf(tmp2));
 
         return reverseNum >= Integer.MIN_VALUE && reverseNum <= Integer.MAX_VALUE ? (int) reverseNum : 0;
-    }
-
-    public static int reverse2(int x) {
-        int rev = 0;
-        while (x != 0) {
-            int pop = x % 10;
-            x /= 10;
-            if (rev > Integer.MAX_VALUE/10 || (rev == Integer.MAX_VALUE / 10 && pop > 7)) return 0;
-            if (rev < Integer.MIN_VALUE/10 || (rev == Integer.MIN_VALUE / 10 && pop < -8)) return 0;
-            rev = rev * 10 + pop;
-        }
-        return rev;
     }
 
 }
