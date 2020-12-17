@@ -9,23 +9,13 @@ public class TwoSum {
     }
 
     private static int[] twoSum(int[] nums, int target) {
-
-        int[] result = new int[2];
-
         for (int i = 0; i < nums.length; i++) {
-            int tmp = 0;
-
-            for (int j = i+1; j < nums.length; j++) {
-                tmp = j;
+            for (int j = i + 1; j < nums.length; j++) {
                 if ((nums[i] + nums[j]) == target) {
-                    break;
+                    return new int[]{i, j};
                 }
             }
-            if ((nums[i] + nums[tmp]) == target) {
-                result = new int[]{i, tmp};
-                break;
-            }
         }
-        return result;
+        throw new IllegalArgumentException("No solution");
     }
 }
