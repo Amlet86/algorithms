@@ -14,5 +14,4 @@ public class LengthOfLastWord {
         }
         return 0;
     }
-
 }
