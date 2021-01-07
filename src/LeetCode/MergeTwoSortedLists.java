@@ -33,7 +33,7 @@ public class MergeTwoSortedLists {
         return l3.next;
     }
 
-    public static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
 
