@@ -2,4 +2,4 @@
 
 My solutions of algorithmic problems from:
 
-- [LeetCode](https://leetcode.com/);
+- [ru.amlet.LeetCode](https://leetcode.com/);
